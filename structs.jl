@@ -1,3 +1,4 @@
+using GeneDrive
 using StatsBase
 
 mutable struct WolbachiaExperiment

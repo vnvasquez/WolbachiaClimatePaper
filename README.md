@@ -2,7 +2,7 @@
 
 Code and data for initial paper submission. 
 
-Authors: Váleri N. Vásquez<sup>1,2</sup>, Lara M. Kueppersy<sup>1,3</sup>, Gordana Rāsić<sup>4</sup>, John M. Marshall<sup>5,6</sup>
+Authors: Váleri N. Vásquez<sup>1,2</sup>, Lara M. Kueppers<sup>1,3</sup>, Gordana Rāsić<sup>4</sup>, John M. Marshall<sup>5,6</sup>
 
 Affiliations: 
 1. Energy and Resources Group, Rausser College of Natural Resources, University of California Berkeley, CA, USA

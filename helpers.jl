@@ -24,7 +24,6 @@ function format_dynamic_model_results(data::WolbachiaExperiment)
     return format_dynamic_model_results(data.node)
 end
 
-# Because these two accessor functions are not currently exported 
 import GeneDrive: get_organisms, count_genotypes
 
 function get_organisms(data::WolbachiaExperiment)

@@ -1,6 +1,6 @@
 
 """
-function get_response_type(node::Node, species::Type{<:Species}, life_stage::Type{<:LifeStage})
+    function get_response_type(node::Node, species::Type{<:Species}, life_stage::Type{<:LifeStage})
 
 Returns temperature response type for appropriate dispatch of temperature-sensitive functions.
 """
@@ -13,7 +13,7 @@ function get_response_type(
 end
 
 """
-function temperature_responsive_inheritence(response_type::Type{NoResponse}, ctemp::Float64, genetics::Genetics, gene_index::Int64)
+    function temperature_responsive_inheritence(response_type::Type{NoResponse}, ctemp::Float64, genetics::Genetics, gene_index::Int64)
 
 Dispatches on `NoResponse` type to return offspring likelihoods for each genotype that are not responsive to temperature.
 """
@@ -27,7 +27,7 @@ function temperature_responsive_inheritence(
 end
 
 """
-function temperature_responsive_inheritence(response_type::Type{T}, ctemp::Float64, genetics::Genetics, gene_index::Int64) where {T <:TemperatureResponse}
+    function temperature_responsive_inheritence(response_type::Type{T}, ctemp::Float64, genetics::Genetics, gene_index::Int64) where {T <:TemperatureResponse}
 
 Dispatches on `TemperatureResponse` type(s) to return offspring likelihoods for each genotype that are responsive to temperature.
 """
@@ -49,7 +49,7 @@ function temperature_responsive_inheritence(
 end
 
 """
-function temperature_responsive_hatching(response_type::Type{NoResponse}, ctemp::Float64, genetics::Genetics, gene_index::Int64)
+    function temperature_responsive_hatching(response_type::Type{NoResponse}, ctemp::Float64, genetics::Genetics, gene_index::Int64)
 
 Dispatches on `NoResponse` type to return hatch proportions for each genotype that are not responsive to temperature.
 """
@@ -63,7 +63,7 @@ function temperature_responsive_hatching(
 end
 
 """
-function temperature_responsive_hatching(response_type::Type{NoResponse}, ctemp::Float64, genetics::Genetics, gene_index::Int64)
+    function temperature_responsive_hatching(response_type::Type{NoResponse}, ctemp::Float64, genetics::Genetics, gene_index::Int64)
 
 Dispatches on `TemperatureResponse` type(s) to return hatch proportions for each genotype that are responsive to temperature.
 """
@@ -106,11 +106,9 @@ function temperature_responsive_hatching(
 end
 
 """
-function oviposit(F, data::WolbachiaExperiment, key_species, genetics::Genetics{Wolbachia},
-gene_index::Int64, inputs::ExogenousInputs, t)
+    function oviposit(F, data::WolbachiaExperiment, key_species, genetics::Genetics{Wolbachia}, gene_index::Int64, inputs::ExogenousInputs, t)
 
-Dispatches on `WolbachiaExperiment` type(s) to return oviposited eggs, accounting for temperature-responsiveness in
-hatching, cytoplasmic incompatibility, and inheritence.
+Dispatches on `WolbachiaExperiment` type(s) to return oviposited eggs, accounting for temperature-responsiveness in hatching, cytoplasmic incompatibility, and inheritence.
 """
 function oviposit(
     F,
@@ -149,10 +147,9 @@ function oviposit(
 end
 
 """
-function population_model_wolbachia(du, u, (data, inputs), t)
+    function population_model_wolbachia(du, u, (data, inputs), t)
 
-Builds dynamic population model that incorporates new Wolbachia-specific
-temperature-responsive functions into the GeneDrive.jl ODE model.
+Builds dynamic population model that incorporates new Wolbachia-specific temperature-responsive functions into the GeneDrive.jl ODE model.
 """
 function population_model_wolbachia(du, u, (data, inputs), t)
     node = data.node
@@ -248,11 +245,9 @@ function population_model_wolbachia(du, u, (data, inputs), t)
 end
 
 """
-function solve_dynamic_model_wolbachia(data::WolbachiaExperiment,
-releases::Vector, tempseries::Vector, algorithm, tspan)
+    function solve_dynamic_model_wolbachia(data::WolbachiaExperiment, releases::Vector, tempseries::Vector, algorithm, tspan)
 
-Solves dynamic population model that incorporates new Wolbachia-specific
-temperature-responsive functions into the GeneDrive.jl ODE model.
+Solves dynamic population model that incorporates new Wolbachia-specific temperature-responsive functions into the GeneDrive.jl ODE model.
 """
 function solve_dynamic_model_wolbachia(
     data::WolbachiaExperiment,

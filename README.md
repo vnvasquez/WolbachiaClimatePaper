@@ -1,4 +1,4 @@
-# Wolbachia-based dengue intervention is impeded by climate change: A modeling study on the effects of heatwaves and rising average temperatures in temperate regions
+# Wolbachia-based public health interventions under climate change: A modeling study on the response wMel replacement to heatwaves and rising average temperatures
 
 Code and data for initial paper submission. 
 

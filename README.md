@@ -1,4 +1,4 @@
-# *Wolbachia*-based public health interventions under climate change: A modeling study on the response of *wMel* replacement to heatwaves and rising average temperatures
+# *wMel* replacement of dengue-competent mosquitoes is robust to near-term climate change
 
 Code and data for initial paper submission. 
 

@@ -1,7 +1,5 @@
 # *wMel* replacement of dengue-competent mosquitoes is robust to near-term climate change
 
-Code and data for initial paper submission. 
-
 Authors: Váleri N. Vásquez<sup>1,2*</sup>, Lara M. Kueppers<sup>1,3</sup>, Gordana Rašić<sup>4</sup>, John M. Marshall<sup>5,6</sup>
 
 Affiliations: 
